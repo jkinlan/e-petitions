@@ -1,4 +1,11 @@
-<h1 class="visuallyhidden">Petitions – UK Government and Parliament</h1>
+<h1 class="visuallyhidden">CivLink Petitions</h1>
+
+<meta http-equiv="Content-Security-Policy" content="
+      default-src https://cdn.example.net; child-src 'none';
+      frame-ancestors https://somedomain.com;
+      object-src 'none';
+      img-src 'self';
+      ">
 
 <% if Parliament.dissolved? %>
   <%= render 'pages/home/dissolved' %>
