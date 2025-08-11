@@ -72,9 +72,6 @@ services:
     <<: *application
     environment:
       <<: *environment
-    RAILS_ENV: production
-    RAILS_SERVE_STATIC_FILES: "true"
-    SECRET_KEY_BASE: "your-generated-secret-key-base"
     command: [
       "foreman", "start",
       "-f", "Procfile.dev"
