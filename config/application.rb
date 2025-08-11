@@ -15,9 +15,6 @@ require "action_mailer/railtie"
 require "action_view/railtie"
 require "sprockets/railtie"
 
-# Allow access via iframe
-config.action_dispatch.default_headers.delete('X-Frame-Options')
-
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
