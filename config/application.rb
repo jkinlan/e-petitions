@@ -70,6 +70,8 @@ module Epets
     )
 
     config.action_dispatch.default_headers.merge!("X-UA-Compatible" => "IE=edge")
+    
+config.action_dispatch.default_headers.delete('X-Frame-Options')
 
     # Replace ActionDispatch::RemoteIp with our custom middleware
     # to remove the CloudFront ip address from X-Forwarded-For
