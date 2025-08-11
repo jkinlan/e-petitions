@@ -3,8 +3,8 @@ require 'csv'
 namespace :epets do
   desc "Add sysadmin user"
   task :add_sysadmin_user => :environment do
-    if AdminUser.find_by(email: 'jkinlan@kravemedia.ie').nil?
-       admin = AdminUser.new(:first_name => 'James', :last_name => 'Kinlan', :email => 'jkinlan@kravemedia.ie', :password => 'P@55w0rd')
+    if AdminUser.find_by(email: 'admin@example.com').nil?
+       admin = AdminUser.new(:first_name => 'Cool', :last_name => 'Admin', :email => 'admin@example.com')
        admin.role = 'sysadmin'
        admin.save!
      end
