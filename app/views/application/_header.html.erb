@@ -1,2 +1,14 @@
 <header id="global-header">
+  <div class="wrapper">
+    <% if home_page? %>
+      <span class="proposition">
+        Petitions
+      </span>
+    <% else %>
+      <%= link_to(home_path, :title => 'Go to the petitions homepage', :class => 'proposition') do %>
+        Petitions
+      <% end %>
+    <% end %>
+    <p class="strapline">UK Government and Parliament</p>
+  </div>
 </header>
