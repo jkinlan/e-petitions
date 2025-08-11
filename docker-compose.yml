@@ -31,7 +31,7 @@ x-environment: &environment
 
 services:
   dnsmasq:
-    image: e-petitions/dnsmasq@
+    image: e-petitions/dnsmasq
     build: docker/dnsmasq
     volumes:
       - type: bind
