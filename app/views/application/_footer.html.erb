@@ -1,24 +1,2 @@
 <footer id="footer">
-  <div class="wrapper">
-    <ul id="footer_nav">
-      <li><%= link_to 'Home', home_path %></li>
-      <li><%= link_to 'All petitions', petitions_path %></li>
-      <% unless Site.disable_petition_creation? || Parliament.closed? %>
-        <li><%= link_to 'Start a petition', check_petitions_path %></li>
-      <% end %>
-      <li><%= link_to 'How petitions work', help_path %></li>
-      <li><%= link_to 'Privacy', privacy_path %></li>
-      <li><%= link_to 'Cookies', cookies_path %></li>
-      <li><%= link_to 'Feedback', feedback_path %></li>
-      <li><%= link_to 'Accessibility statement', accessibility_path %></li>
-    </ul>
-
-    <div class="open-government-licence">
-      <p>All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="external license">Open Government Licence v3.0</a>, except where otherwise stated</p>
-    </div>
-
-    <div class="copyright">
-      <a href="https://www.nationalarchives.gov.uk/information-management/our-services/crown-copyright.htm" rel="external">© Crown copyright</a>
-    </div>
-  </div>
 </footer>
