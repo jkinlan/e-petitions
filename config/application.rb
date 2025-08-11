@@ -69,6 +69,7 @@ module Epets
       "BulkVerification::InvalidBulkRequest" => :bad_request
     )
 
+    config.action_dispatch.default_headers.merge!("X-UA-Compatible" => "IE=edge")
     config.action_dispatch.default_headers['X-Frame-Options'] = 'ALLOWALL'
 
 
