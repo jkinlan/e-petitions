@@ -2,21 +2,12 @@ require 'csv'
 
 namespace :epets do
   desc "Add sysadmin user"
-task :add_sysadmin_user => :environment do
-  email = ENV.fetch('ADMIN_EMAIL', 'jkinlan@kravemedia.ie')
-  password = ENV.fetch('ADMIN_PASSWORD', 'P@55w0rd')
-  
-  if AdminUser.find_by(email: email).nil?
-    admin = AdminUser.new(
-      first_name: ENV.fetch('ADMIN_FIRST_NAME', 'James'),
-      last_name: ENV.fetch('ADMIN_LAST_NAME', 'Kinlan'),
-      email: email,
-      role: 'sysadmin',
-      password: password,
-      password_confirmation: password
-    )
-    admin.save!
-  end
+  task :add_sysadmin_user => :environment do
+    if AdminUser.find_by(email: 'jkinlan@kravemedia.ie').nil?
+       admin = AdminUser.new(:first_name => 'James', :last_name => 'Kinlan', :email => 'jkinlan@kravemedia.ie', :password => 'P@55w0rd')
+       admin.role = 'sysadmin'
+       admin.save!
+     end
   end
 
   desc "Email threshold users with a list of threshold petitions"
