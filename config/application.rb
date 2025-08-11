@@ -69,9 +69,7 @@ module Epets
       "BulkVerification::InvalidBulkRequest" => :bad_request
     )
 
-    config.action_dispatch.default_headers['X-Frame-Options'] = 'ALLOWALL'
-
-
+    config.action_dispatch.default_headers.merge!("X-UA-Compatible" => "IE=edge")
 
     # Replace ActionDispatch::RemoteIp with our custom middleware
     # to remove the CloudFront ip address from X-Forwarded-For
