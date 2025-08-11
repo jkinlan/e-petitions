@@ -72,9 +72,13 @@ services:
     <<: *application
     environment:
       <<: *environment
+      RAILS_ENV: production
+      RACK_ENV: production
+      RAILS_SERVE_STATIC_FILES: "true"
+      SECRET_KEY_BASE: "testtesttest345345test"
     command: [
       "foreman", "start",
-      "-f", "Procfile.dev"
+      "-f", "Procfile"
     ]
     ports:
       - "127.0.0.1:3000:3000"
@@ -84,6 +88,7 @@ services:
     stdin_open: true
     tty: true
     init: true
+
 
   console:
     <<: *application
