@@ -2,21 +2,12 @@
   <div class="wrapper">    
   <header class="site-header">
       <img src="http://localhost:3001/static/media/civlink_logo.a15deb004278e606d6a6.png" className="App-logo" alt="Welcome to CivLink" />
-      <a href="/signin" class="sign-in-btn">Sign In</a>
       </header>
       <nav className="menu">
         <Link to="/FixMyStreet">Report Issues</Link>
         <Link to="/Petitions">Petitions</Link>
       </nav>
-    <% if home_page? %>
-      <span class="proposition">
-        Petitions
-      </span>
-    <% else %>
-      <%= link_to(home_path, :title => 'Go to the petitions homepage', :class => 'proposition') do %>
-        Petitions
-      <% end %>
-    <% end %>
+
 
     <p class="strapline"></p>
   </div>
