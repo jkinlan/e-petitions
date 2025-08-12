@@ -1,5 +1,13 @@
 <header id="global-header">
-  <div class="wrapper">
+  <div class="wrapper">    
+  <header class="site-header">
+      <img src={logo} className="App-logo" alt="Welcome to CivLink" />
+      <a href="/signin" class="sign-in-btn">Sign In</a>
+      </header>
+      <nav className="menu">
+        <Link to="/FixMyStreet">Report Issues</Link>
+        <Link to="/Petitions">Petitions</Link>
+      </nav>
     <% if home_page? %>
       <span class="proposition">
         Petitions
@@ -9,14 +17,7 @@
         Petitions
       <% end %>
     <% end %>
-    <header class="site-header">
-      <img src={logo} className="App-logo" alt="Welcome to CivLink" />
-      <a href="/signin" class="sign-in-btn">Sign In</a>
-      </header>
-      <nav className="menu">
-        <Link to="/FixMyStreet">Report Issues</Link>
-        <Link to="/Petitions">Petitions</Link>
-      </nav>
+
     <p class="strapline"></p>
   </div>
 </header>
