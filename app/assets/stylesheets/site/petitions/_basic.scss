@@ -177,7 +177,7 @@ a.sign-in-btn:hover {
   background-color: rgb(0, 102, 0) !important; 
 }
 
-header.a {
+header a {
   background-color: #0072c6;
   color: white !important;
   padding: 1rem 1rem;
@@ -194,7 +194,7 @@ header.a {
   box-sizing: border-box;
 }
 
-header.a:hover {
+header a:hover {
   background-color: #0062a8;
   transform: scale(1.015);
 }
