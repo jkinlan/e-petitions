@@ -61,9 +61,14 @@ body {
   background-color: #008AD8;
 }
 
+a.sign-in-btn{
+  background-color: Green;
+  color: white !important;
+}
+
 a {
   background-color: #0072c6;
-  color: white;
+  color: white !important;
   padding: 1rem 1rem;
   text-align: center;
   text-decoration: none;
