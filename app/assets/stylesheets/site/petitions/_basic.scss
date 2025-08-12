@@ -101,11 +101,6 @@ div.wrapper{
     width: 100%;
     max-width: 100%;
 }
-#menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 }
 
 @media only screen and (min-width: 603px) {
@@ -129,14 +124,15 @@ div.wrapper{
   justify-content: space-between;
   align-items: center;
 }
-div.wrapper{
-    width: 100%;
-    max-width: 100%;
-}
-#menu {
+#nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+div.wrapper{
+    width: 100%;
+    max-width: 100%;
 }
 }
 
