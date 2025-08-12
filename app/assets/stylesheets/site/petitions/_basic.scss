@@ -77,7 +77,7 @@ html{
 }
 
 @media only screen and (max-width: 602px) {
-#App-logo {
+header.site-header img {
   height: 15vmin;
   pointer-events: none;
   margin:auto;
@@ -108,7 +108,7 @@ div.wrapper{
 }
 
 @media only screen and (min-width: 603px) {
-#App-logo {
+header.site-header img {
   height: 10vmin;
   pointer-events: none;
   margin-left:38%;
