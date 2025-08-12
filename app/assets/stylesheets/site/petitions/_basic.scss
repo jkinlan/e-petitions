@@ -61,7 +61,7 @@ body {
   background-color: #008AD8;
 }
 
-#sign-in-btn{
+a.sign-in-btn{
   padding: 16px 32px;
   background-color: Green; 
   color: white;
@@ -70,8 +70,8 @@ body {
   transform: scale(1.015);
 }
 
-#sign-in-btn a:hover {
-  background-color: rgb(0, 102, 0); 
+a.sign-in-btn a:hover {
+  background-color: rgb(0, 102, 0) !important; 
 }
 
 a {
