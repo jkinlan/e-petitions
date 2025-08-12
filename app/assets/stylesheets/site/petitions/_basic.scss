@@ -23,56 +23,6 @@ html {
   -ms-overflow-style: scrollbar;
 }
 
-@media only screen and (max-width: 602px) {
-.App-logo {
-  height: 15vmin;
-  pointer-events: none;
-  margin:auto;
-  padding-top: .5rem;
-  padding-bottom: 1.5rem;
-  display: block;
-}
-.sign-in-btn {
-  padding: 16px 32px;
-  background-color: Green; 
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transform: scale(1.015);
-}
-.site-header {
-  display:contents;
-  align-items:center;
-  display:block;
-  text-align: center;
-  margin:auto;
-  padding-bottom: 1rem;
-}
-}
-
-@media only screen and (min-width: 603px) {
-.App-logo {
-  height: 10vmin;
-  pointer-events: none;
-  margin-left:38%;
-  padding-top: .5rem;
-  display: block;
-}
-.sign-in-btn {
-  padding: 16px 32px;
-  background-color: Green; 
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  margin-right:25%;
-}
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
 body {
   background: $white;
   color: $text-colour;
@@ -161,7 +111,7 @@ div.wrapper{
 .App-logo {
   height: 10vmin;
   pointer-events: none;
-  margin-left:38%;
+  margin-left:40%;
   padding-top: .5rem;
   display: block;
 }
