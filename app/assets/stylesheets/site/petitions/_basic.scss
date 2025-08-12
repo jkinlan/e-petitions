@@ -109,6 +109,14 @@ div.wrapper{
 }
 }
 
+nav {
+  background-color: #008AD8;
+  display: flex;
+  justify-content: center;
+  margin: .5rem;
+  gap: .5rem;
+}
+
 @media only screen and (min-width: 603px) {
 header.site-header img {
   height: 10vmin;
