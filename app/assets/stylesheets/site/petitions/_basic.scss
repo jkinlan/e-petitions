@@ -62,11 +62,11 @@ body {
 }
 
 .button-secondary, .button-secondary:link, .button-secondary:visited, .button-secondary:active, .button-secondary:hover{
-  color: #008AD8;
+  color: #008AD8 !important;
 }
 
 select.form-control{
-  color: #000;
+  color: #000 !important;
 }
 
 footer{

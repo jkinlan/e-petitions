@@ -342,7 +342,7 @@ Feature: Suzie signs a petition
     Then I should see a "Postcode" text field
     When I select "United States" from "Location"
     Then I should not see a "Postcode" text field
-    When I check "I am a British citizen or UK resident"
+    When I check "I am an Irish citizen or resident"
     And I fill in "Name" with "Womboid Wibbledon"
     And I fill in "Email" with "womboid@wimbledon.com"
     And I press "Continue"
